@@ -25,4 +25,5 @@ This Repository have the Labs solution on Linux part
 10-tail -7 etc/passwd
 11- 
 12-man passwd
-13-man -k "passwd" {apropose searches for instance with "keyword", keyword is regularexpression 
+13-man -k "passwd" {apropose searches for instance with "keyword", keyword is regularexpression
+14- 
