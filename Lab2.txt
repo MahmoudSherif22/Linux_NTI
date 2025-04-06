@@ -1,0 +1,25 @@
+1- cat etc/shells
+  OR -> $ grep -v '^#' /etc/shells
+2-set 
+3- echo $0
+4- printenv
+5- nano .bashrc
+  echo "Welcome Mahmoud"
+  date 
+6-ls >file_list
+7- touch file1.txt file2.txt file3.txt
+   ls *.txt
+8- ls >> file2
+9-ls | grep -r "report"
+10-  head -n 5 passwd
+     tail -n 10 passwd
+11-cut -f 2 -d ',' data.csv
+12-grep -l "ERROR" log.txt
+13- current_usr=$(whoami)
+14- echo "mahmoud" | tr '[:lower:]' '[:upper:]'
+15- ps |grep PID
+16-alias ls="ls -l"
+17- ls -l | sort -k 5 -n
+18- grep "success" -c File_name
+19- head -n 20 file3
+20-cut -f 1 -d "," data.csv
