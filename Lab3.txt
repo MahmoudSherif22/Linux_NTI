@@ -1,0 +1,35 @@
+1- sudo useradd mahmoud -c "Mahmoud Sherif" -p islam
+2- sudo useradd baduser -c "Bad User" -p baduser 
+cat /etc/passwd | grep baduser -> to Make sure that user created
+3-sudo groupadd -g 30000 pgroup 
+4- sudo groupadd badgroup
+   cat /etc/group |grep badgroup -> make sure group created
+5-sudo gpasswd -a hoda pgroup
+6- sodu su (switch user) -> so we could go to root 
+   sodu passwd hoda
+   enter : password
+7-sudo chage -M 30 hoda
+8-sudo passwd -l baduser
+9-sudo userdel badusersudo groupdel badgroup
+10-sudo groupdel badgroup
+11- touch myteam 
+   chmod 400 lab3
+12- sudo su hoda 
+13- cd myteam
+14- 
+ a- chmod 631 oldpasswd 
+    chmod u=rw,g=wx,o=x oldpasswd
+ b- sudo setfacl -PRdm u::rwx,g::rw,o::r /home
+ c- 777 , 777
+ d-
+15- find . -mtime -2
+16- find /etc -type f $home_dir -uid 0
+17-find /etc -type f $home_dir
+18-find -type f -name ".profile"
+19- file /etc/passwd
+20- ls -i /
+21-diff /etc/passwd passwd
+ cmp /etc/passwd passwd
+22-sudo ln -s etc/passwd /boot
+23- sudo ln /etc/passwd /boot
+ln: failed to create hard link '/boot/passwd': File exists
