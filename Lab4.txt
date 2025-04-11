@@ -1,0 +1,34 @@
+1- touch processes.txt
+   ps > processes.txt
+2- pidof sshd
+(systemctl -> it like a remote control for starting, stopping, checking, enabling, or disabling services)
+3- (a signal is a way for the system or a user to communicate with a process — usually to tell it to stop, pause, continue, or handle something.)
+   sleep 500 
+   ctrl z 
+   ps ->(so i could know whats the PID "Process ID" )
+   sleep 5 (wait for 5 seconds)
+   kill -9 92(PID)
+4- sudo apt update 
+   sudo apt install apache2 
+   nano /var/www/html/index.html
+5- 
+-sudo apt install openssh-server -y (install ssh)
+-sudo systemctl status ssh 
+-sudo systemctl start ssh 
+6- 
+-sudo systemctl status cron
+-sudo systemctl start cron  
+7- sudo tar -czvf compressed.tar.gz /var/log
+8-
+-mkdir logs_backup
+-tar -xvzf archive.tar.gz -C ~/logs_backup (/ -> means root directory , ~ -> means home directory 
+9- tar -cvf /tmp/archive.tar /etc/ssh
+10- gzip ~/processes.txt
+11- 
+-ls -lh
+-gzip -d processes.txt
+-ls -lh
+12-sudo apt install htop
+13-apt-cache search nginx
+14- sudo apt remove vim
+15- wget https://git.kernel.org/torvalds/t/linux-6.15-rc1.tar.gz
